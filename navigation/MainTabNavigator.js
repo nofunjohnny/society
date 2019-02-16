@@ -3,16 +3,17 @@ import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/HomeScreen';
+import HappeningScreen from '../screens/HappeningScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import ProfileScreen from '../screens/ProfileScreen';
 
-const HomeStack = createStackNavigator({
-  Home: HomeScreen,
+const HappeningStack = createStackNavigator({
+  Happening: HappeningScreen,
 });
 
-HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
+HappeningStack.navigationOptions = {
+  tabBarLabel: 'Happening',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -53,8 +54,27 @@ SettingsStack.navigationOptions = {
   ),
 };
 
+const ProfileStack = createStackNavigator({
+  Profile: ProfileScreen,
+});
+
+ProfileStack.navigationOptions = {
+  tabBarLabel: 'Profile',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
+          ? `ios-information-circle${focused ? '' : '-outline'}`
+          : 'md-information-circle'
+      }
+    />
+  ),
+};
+
 export default createBottomTabNavigator({
-  HomeStack,
+  ProfileStack,
+  HappeningStack,
   LinksStack,
   SettingsStack,
 });
