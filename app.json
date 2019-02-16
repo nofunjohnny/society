@@ -12,9 +12,7 @@
     "orientation": "portrait",
     "icon": "./assets/1x/logomdpi.png",
     "splash": {
-      "image": "./assets/1x/logomdpi.png",
-      "resizeMode": "",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/1x/logomdpi.png"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
