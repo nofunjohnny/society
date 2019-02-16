@@ -26,7 +26,7 @@ export default class HomeScreen extends React.Component {
               source={
                 __DEV__
                   ? require('../assets/1x/logomdpi.png')
-                  : require('../assets/images/robot-prod.png')
+                  : require('../assets/1x/logomdpi.png')
               }
               style={styles.welcomeImage}
             />
@@ -119,8 +119,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   welcomeImage: {
-    width: 100,
-    height: 80,
+    width: 64,
+    height: 64,
     resizeMode: 'contain',
     marginTop: 3,
     marginLeft: -10,

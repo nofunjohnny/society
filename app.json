@@ -13,7 +13,7 @@
     "icon": "./assets/1x/logomdpi.png",
     "splash": {
       "image": "./assets/1x/logomdpi.png",
-      "resizeMode": "contain",
+      "resizeMode": "",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -38,6 +38,8 @@
       "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.10.2-sdk32.0.0-c59c23cd-1d49-49d2-a633-d03f9d554cf6.tar.gz",
       "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.10.6-sdk32.0.0-83a07c97-312f-4bbf-8b19-5c609bc3c386.tar.gz"
     },
-    "scheme": "exp49190cd78f3141dcb2953ec045a6ddc4"
+    "scheme": "exp49190cd78f3141dcb2953ec045a6ddc4",
+    "description": "",
+    "githubUrl": "https://github.com/nofunjohnny/society"
   }
 }
